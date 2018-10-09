@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B44A30BC-8486-4C26-BCFE-0CBDCB698D4A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KTV</RootNamespace>
+    <AssemblyName>KTV</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/KTV/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auton.Designer.cs">
+      <DependentUpon>Auton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DaiGe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaiGe.Designer.cs">
+      <DependentUpon>DaiGe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictionary.Designer.cs">
+      <DependentUpon>dictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Number.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Number.Designer.cs">
+      <DependentUpon>Number.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play.Designer.cs">
+      <DependentUpon>Play.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KTVclass\frmdictionaryMenthod.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musicinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musicinfo.Designer.cs">
+      <DependentUpon>Musicinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KTVclass\getConnection.cs" />
+    <Compile Include="KTVclass\tbMusicnfoMenthod.cs" />
+    <Compile Include="KTVclass\tb_authorinfo.cs" />
+    <Compile Include="KTVclass\tb_authorinfoMenthod.cs" />
+    <Compile Include="KTVclass\tb_computer.cs" />
+    <Compile Include="KTVclass\tb_dictionary.cs" />
+    <Compile Include="KTVclass\tb_musicinfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Auton.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Auton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaiGe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DaiGe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictionary.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>dictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musicinfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Musicinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Number.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Number.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Play.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\db_KTV.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\退出.png" />
+    <None Include="Resources\播放.png" />
+    <None Include="Resources\选择.png" />
+    <None Include="Resources\歌名点歌.png" />
+    <None Include="Resources\明星点歌.png" />
+    <None Include="Resources\拼音点歌.png" />
+    <None Include="Resources\数字点歌.png" />
+    <None Include="Resources\背景图.bmp" />
+    <None Include="Resources\0.png" />
+    <None Include="Resources\取消按钮.bmp" />
+    <None Include="Resources\确定按钮.bmp" />
+    <None Include="Resources\背景.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
